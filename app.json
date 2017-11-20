@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/messages/messages",
+    "pages/discover/discover",
+    "pages/search/search",
+    "pages/index/index",
+    "pages/type/type",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/detail/detail",
+    "pages/typeList/typeList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./img/icon_home.png",
+        "selectedIconPath": "./img/icon_home_active.png"
+      },
+      {
+        "pagePath": "pages/messages/messages",
+        "text": "留言",
+        "iconPath": "./img/icon_messages.png",
+        "selectedIconPath": "./img/icon_messages_active.png"
+      },
+      {
+        "pagePath": "pages/discover/discover",
+        "text": "发现",
+        "iconPath": "./img/icon_discover.png",
+        "selectedIconPath": "./img/icon_discover_active.png"
+      }
+    ]
+  }
+}

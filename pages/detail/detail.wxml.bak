@@ -1,0 +1,55 @@
+<view  class="article">
+    <view class="articleBox">
+        <text class="title">斤斤计较</text>
+        <text class="pubtime">2120415415</text>
+        <image class="a-img"  src='../../img/yuantiao.jpg'></image>
+        <view class="detail">
+反而费
+        </view>
+        <view class="remarks">
+                接口接口了
+        </view>
+        <view class="tips clearfix">
+            <view class="leftBar">
+                <!-- <li v-html="article.region">互联网</li>-->
+                <text>急急急</text>
+                <!--<li>财务</li>-->
+            </view>
+            <view class="rightBar">
+                <view>作者：<text>看就看</text></view>
+                <view>0回复</view>
+                <view class="like"><i class="iconfont icon-xin1 t-FF9797 mr5"></i>5
+                </view>
+            </view>
+        </view>
+        
+    </view>
+    
+</view>
+<view class="replyBox">
+    <view class="replyList clearfix">
+        <view class="photo"><image src='../../img/yewan_icon.png'></image></view>
+        <view class="commentInfo">
+            <view class='h3'>
+                <text class="replyName">皓月叶舞</text>
+                <text class="replydate">2017-5-5</text>
+                <text  class="z-reply">回复</text>
+            </view>
+            <text class="commentInfo-detail">真的是这样啊想起回复</text>
+        </view>
+        <view class="otherReply">
+            <view class="otherReply-photo"><image src='../../img/yewan_icon.png'></image></view>
+            <view class="otherReply-commentInfo">
+                <view class='h3'>
+                    <text class="replyName">皓月大雾</text>
+                    <text v-if="list.sub_re_name" class="replyTo">回复：皓月叶舞</text>
+                    <text class="replydate">2017-323-3232</text><text  class="s_reply">回复</text>
+                </view>
+                <view class="otherReply-commentInfo-detail">
+                   还考虑寄回家考虑好接口
+                </view>
+            </view>
+        </view>
+    </view>
+
+</view>

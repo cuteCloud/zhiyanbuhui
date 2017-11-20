@@ -1,0 +1,4 @@
+<view><image class='goIng' src='../../img/goIng.png'></image></view>
+<view>
+<text class='info'>本小程序主要供求职者筛选出不诚信公司，避免求职者受骗~</text>
+</view>

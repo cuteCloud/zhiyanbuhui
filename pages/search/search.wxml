@@ -1,0 +1,12 @@
+<view class='container'>
+ <view class='searchBox' bindtap='jumpSearch'><i class='iconfont icon-sousuo'></i><input confirm-type='search' bindconfirm='s_typeSearch'  placeholder='点我开始搜索...'></input></view>
+  <view class='content'>
+     <view class='historyTitle'><text  wx:if='{{historyArr.length>0}}'>历史搜索</text> <text wx:if='{{historyArr.length>1}}' bindtap='clearAllKey'>清除所有</text></view>
+        <view class='historyBox' wx:for="{{historyArr}}" wx:for-index="idx" wx:key='key'>
+          <view class='companyName' data-value='{{item}}' bindtap='jumpList'>{{item}} </view><view class='delete' data-id='{{idx}}'  bindtap='clearHistoryKey'>×</view>
+        </view>
+        <view class='nokey' wx:if='{{historyArr.length==0}}'>
+          暂无历史搜索哟！(*^▽^*)
+        </view>
+  </view>
+</view>

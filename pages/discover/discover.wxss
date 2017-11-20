@@ -1,0 +1,15 @@
+view{
+  text-align: center
+}
+.goIng{
+  width: 256rpx;
+  height: 256rpx;
+  margin: 200rpx auto 100rpx auto;
+}
+.info{
+  font-size: 30rpx;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  color: #d4237a;
+}

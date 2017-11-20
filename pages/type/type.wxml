@@ -1,0 +1,78 @@
+<view class='container'>
+  <view class="section typeSearch">
+    <text class='iconfont icon-sousuo'></text>
+    <input disabled type='text' confirm-type='search' id='js-typeSearch' bindtap='jumpSearch' placeholder="请输入搜索内容"/>
+  </view>
+  <view class='typeList'>
+    <view class='listBox'>
+      <view class='title'>
+        <image src='../../img/icon_type_01.png'></image>
+        <text>测试</text>
+      </view>
+      <view class='content'>
+        <view class='subBox' data-type='case' bindtap='jumpList'>
+          <image src='../../img/icon_type_content_01.png'></image>
+          <view class='text'>
+            <text class='name'>哈哈</text>
+          </view>
+        </view>
+        <view class='subBox'>
+          <image src='../../img/icon_type_content_01.png'></image>
+          <view class='text'>
+            <text class='name'>哈哈</text>
+          </view>
+        </view>
+        <view class='subBox'>
+          <image src='../../img/icon_type_content_01.png'></image>
+          <view class='text'>
+            <text class='name'>哈哈</text>
+          </view>
+        </view>
+        <view class='subBox'>
+          <image src='../../img/icon_type_content_01.png'></image>
+          <view class='text'>
+            <text class='name'>哈哈</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='listBox'>
+      <view class='title'>
+        <image src='../../img/icon_type_01.png'></image>
+        <text>测试</text>
+      </view>
+      <view class='content'>
+        <view class='subBox'>
+          <image src='../../img/icon_type_content_01.png'></image>
+          <view class='text'>
+            <text class='name'>哈哈</text>
+          </view>
+        </view>
+        <view class='subBox'>
+          <image src='../../img/icon_type_content_01.png'></image>
+          <view class='text'>
+            <text class='name'>哈哈</text>
+          </view>
+        </view>
+        <view class='subBox'>
+          <image src='../../img/icon_type_content_01.png'></image>
+          <view class='text'>
+            <text class='name'>哈哈</text>
+          </view>
+        </view>
+        <view class='subBox'>
+          <image src='../../img/icon_type_content_01.png'></image>
+          <view class='text'>
+            <text class='name'>哈哈</text>
+          </view>
+        </view>
+        <view class='subBox'>
+          <image src='../../img/icon_type_content_01.png'></image>
+          <view class='text'>
+            <text class='name'>哈哈</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

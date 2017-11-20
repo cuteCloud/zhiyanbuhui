@@ -1,0 +1,16 @@
+<wxs src="../../wxs/common.wxs" module="util" />
+<view id="cd-timeline" class="cd-container">
+    <view id="messagesBoxView">
+        <view class="cd-timeline-block" wx:for='{{messages}}' wx:key='key'>
+            <view class="cd-timeline-img {{util.randomColor()}}">
+                <image src="{{item.userPhoto}}" alt="Movie"></image>
+            </view>
+            <view class="cd-timeline-content">
+                <view class='h2'>{{item.title}}</view>
+                <view class='p'>{{item.content}}</view>
+                <view class="cd-read-more" target="_blank">{{item.name}}</view>
+                <view class="cd-date">{{util.formateDate(item.messagedate)}}</view>
+            </view>
+        </view>
+    </view>
+</view>

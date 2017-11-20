@@ -1,0 +1,13 @@
+ var formateDate = function (value) {
+        var date=getDate(value)
+         console.log(date)
+         return date.getFullYear()+'-'+parseInt(date.getMonth()+1)+'-'+date.getDate()+' '+date.getHours()+':'+date.getMinutes()
+    }
+    var randomColor=function(){
+      var circleBg = ['cd-f7ba2a', 'cd-1f2d3d', 'cd-1c8de0', 'cd-bda179', 'cd-7ebcaf', 'cd-a71d5d']
+      return circleBg[Math.floor(Math.random() * 6)]
+    }
+    module.exports = {
+        formateDate: formateDate,
+        randomColor: randomColor
+    }

@@ -1,0 +1,26 @@
+<wxs src="../../wxs/common.wxs" module="util" />
+<view class='content'>
+<scroll-view class='s_scroll' scroll-y lower-threshold='50' bindscrolltolower='loadNew' >
+  <view class='subList'>
+    <view class='subBox' wx:for="{{articleLists}}" wx:key='key' bindtap='jumpDetail' data-aid='{{item._id}}'>
+      <view class='topBar'>
+        <view class='photo'>
+          <image src='{{item.userPhoto}}'></image>
+        </view>
+        <view class='simInfo'>
+          <text class='companyName'>{{item.companyName}}</text>
+          <text class='date'>{{util.formateDate(item.publishdate)}}</text>
+        </view>
+      </view>
+      <text class='articleDesc'>{{item.desc}}</text>
+      <image class='wFull' src='{{item.picArr[0]}}'></image>
+      <view class='bottomBar'>
+        <view class='reply'>{{item.replyNums}}回复</view>
+        <view class='thumbs'>{{item.likeNums}}赞</view>
+        <view class='region'>{{item.region}}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+  </view>

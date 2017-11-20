@@ -1,0 +1,69 @@
+.container{
+  overflow: hidden;
+}
+.searchBox{
+  font-size:24rpx;
+position:relative;
+top:0;
+width:90%;
+left:5%;
+height:70rpx;
+background-color:rgba(255,255,255,1);
+padding:10rpx;
+box-sizing:border-box;
+border-radius:10rpx;
+margin:20rpx 0;
+
+}
+.searchBox i{
+  position: absolute;
+  top: 10rpx;
+  font-size: 40rpx;
+}
+.searchBox input{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 50rpx;
+}
+.content{
+  background-color: #ffffff;
+  position: absolute;
+  top: 120rpx;
+  width: 100%;
+  bottom:0rpx;
+}
+page{width: 100%;height: 100%}
+.historyTitle{
+  padding: 20rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+}
+.historyTitle text:last-child{
+  font-size: 24rpx;
+  color: #666666;
+}
+.historyBox{
+  height: 80rpx;
+  padding: 0 10rpx 0 0;
+  border-bottom: 2rpx dashed #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+.historyBox .delete{
+  color: #666666;
+  font-size: 40rpx;
+}
+.nokey{
+  text-align: center;
+  font-size: 36rpx;
+  color: skyblue;
+  margin: 200rpx 0;
+}

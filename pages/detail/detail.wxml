@@ -1,0 +1,72 @@
+<wxs src="../../wxs/common.wxs" module="util" />
+<view class="article">
+  <view class="articleBox">
+    <text class="title">{{articleInfo.companyName}}</text>
+    <text class="pubtime">{{util.formateDate(articleInfo.publishdate)}}</text>
+    <image class="a-img" src='{{articleInfo.picArr[0]}}'></image>
+    <view class="detail">
+      {{articleInfo.desc}}
+    </view>
+    <view class="remarks">
+     {{articleInfo.remark}}
+    </view>
+    <view class="tips clearfix">
+      <view class="leftBar">
+        <!-- <li v-html="article.region">互联网</li>-->
+        <text>{{articleInfo.region}}</text>
+        <!--<li>财务</li>-->
+      </view>
+      <view class="rightBar">
+        <view>作者：
+          <text>{{articleInfo.author}}</text>
+        </view>
+        <view>{{articleInfo.replyNums}} 回复</view>
+        <view class="like" bindtap='heart'>
+          <i class="iconfont icon-xin1 t-FF9797 mr5"></i>{{articleInfo.likeNums}}
+        </view>
+      </view>
+    </view>
+    <view class="replyBox">
+    <view class='netMes' wx:if='{{f_comments.length>0}}'>网友评论</view>
+      <view class="replyList clearfix" wx:for='{{f_comments}}' wx:key='key'>
+        <view class="photo">
+          <image src='{{item.userPhoto}}'></image>
+        </view>
+        <view class="commentInfo">
+          <view class='h3'>
+            <text class="replyName">{{item.name}}</text>
+            <text class="replydate">{{util.formateDate(item.commentdate)}}</text>
+          </view>
+          <view class="commentInfo-detail">{{item.content}}</view>
+        </view>
+        <view class="otherReply" wx:for='{{item.subComments}}' wx:for-item="sub" wx:key='key'>
+          <view class="otherReply-photo">
+            <image src='{{sub.userPhoto}}'></image>
+          </view>
+          <view class="otherReply-commentInfo">
+            <view class='h3'>
+              <text class="replyName">{{sub.name}}</text>
+ <text wx:if="{{sub.sub_re_name}}" class="replyTo">回复：{{sub.sub_re_name}}</text>
+              <text class="replydate">{{util.formateDate(sub.commentdate)}}</text>
+            </view>
+            <view class="otherReply-commentInfo-detail">
+              {{sub.content}}
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+<view class="comments clearfix">
+    <view class="h2">发表新评论</view>
+    <textarea></textarea>
+    <view class="c_btnGroup">
+        <button  class="newReply" bindtap='tipsA'>确定</button>
+        <button  class="reset">重置</button>
+    </view>
+
+</view>
+  </view>
+
+
+</view>

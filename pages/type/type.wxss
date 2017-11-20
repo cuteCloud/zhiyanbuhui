@@ -1,0 +1,68 @@
+.typeSearch{
+  border: 1px solid #e5e5e5;
+  padding: 30rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  background-color: #f4f4f4;
+  position: relative
+}
+.typeSearch input{
+  background-color: #ffffff;
+  padding: 5rpx 5rpx 5rpx 60rpx;
+  border-radius:8rpx; 
+}
+.icon-sousuo{
+  position: absolute;
+  color: #dddddd;
+  font-size: 48rpx;
+  left: 35rpx;
+  top: 28rpx;
+}
+.title image{
+  vertical-align: middle;
+}
+.title text{vertical-align: middle;font-size: 28rpx;margin-left: 18rpx;}
+.title image{width: 28rpx;height: 28rpx;}
+.typeList{
+
+  background-color: #f4f4f4;
+  overflow: hidden
+}
+.typeList .content{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.typeList .subBox{
+  text-align: center;
+  width: 45%;
+  height: 210rpx;
+  background-color: salmon;
+  margin-top:20rpx;
+  line-height: 210rpx;
+  overflow: hidden;
+  position: relative
+}
+.typeList .subBox image{
+  width: 100%;
+}
+.typeList .subBox .text{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+}
+.listBox{
+  margin-top:20rpx;
+  padding: 0 28rpx 28rpx 28rpx;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.listBox:first-child{
+  margin-top: 0;
+}
